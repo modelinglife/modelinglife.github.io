@@ -26,6 +26,9 @@ site_description: >-
   Create a branded static site from a set of Markdown files to host the
   documentation of your Open Source or commercial project
 
+nav:
+    - Home: index.md
+
 # Repository
 repo_name: home
 repo_url: https://github.com/modelinglife/
