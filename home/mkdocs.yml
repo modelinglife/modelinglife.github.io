@@ -20,15 +20,15 @@
 
 # Project information
 site_name: Modelinglife
-site_url: https://modelinglife.github.io/modelinglife/
+site_url: https://modelinglife.github.io/home/
 site_author: Zadig
 site_description: >-
   Create a branded static site from a set of Markdown files to host the
   documentation of your Open Source or commercial project
 
 # Repository
-repo_name: modelinglife/modelinglife
-repo_url: https://github.com/modelinglife/modelinglife
+repo_name: home
+repo_url: https://github.com/modelinglife/home
 
 # Copyright
 copyright: Copyright &copy; 2016 - 2022 Martin Donath
