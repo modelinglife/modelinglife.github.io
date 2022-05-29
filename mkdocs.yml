@@ -1,13 +1,13 @@
-site_name: Aspetti legali degli open data
-site_url:  https://ondata.github.io/aspetti-legali-opendata
-site_description: "La guida definitiva | Un progetto di Simone Aliprandi, per la campagna #datiBeneComune"
+site_name: Modelinglife
+site_url:  https://modelinglife.github.io/modelinglife/
+site_description: "Modelinglife"
 
 
-repo_url: https://github.com/ondata/aspetti-legali-opendata
-repo_name: aspetti-legali-opendata
+repo_url: https://github.com/modelinglife/modelinglife
+repo_name: modelinglife
 edit_uri: edit/main/docs/
 
-copyright: 'Un progetto di <a href="https://aliprandi.org/" target="_blank">Simone Aliprandi</a> per <a href="https://www.ondata.it/" target="_blank">onData</a>| licenza <a href="https://creativecommons.org/licenses/by/4.0/deed.it" target="_blank">CC BY 4.0</a>'
+copyright: 'Un progetto di | licenza <a href="https://creativecommons.org/licenses/by/4.0/deed.it" target="_blank">CC BY 4.0</a>'
 
 theme:
   name: material
@@ -49,10 +49,10 @@ nav:
 extra:
  social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ondatait
-      name: onData su Twitter
+      link: https://twitter.com/
+      name: modelinglife su Twitter
     - icon: fontawesome/brands/github
-      link: https://github.com/ondata/aspetti-legali-opendata
+      link: https://modelinglife.github.io/modelinglife/
       name: Il repository di questa guida
 
 # foglio di stile personalizzato
@@ -101,4 +101,3 @@ markdown_extensions:
 - toc:
       permalink: true
       toc_depth: 3
-
