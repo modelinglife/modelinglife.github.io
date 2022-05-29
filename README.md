@@ -1,4 +1,4 @@
-# Aspetti legali degli open data: la guida definitiva
+# Modelli
 
 Un'introduzione ai modelli di e di.
 
