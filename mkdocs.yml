@@ -10,7 +10,7 @@ edit_uri: edit/main/docs/
 copyright: 'Un progetto di | licenza <a href="https://creativecommons.org/licenses/by/4.0/deed.it" target="_blank">CC BY 4.0</a>'
 
 theme:
-  name: material
+  name: mkdocs
   icon:
     logo: material/book-open
   highlightjs: true
