@@ -332,6 +332,7 @@ svg * {
     text-decoration: none;
     position: relative;
     display: inline-block;
+    white-space: nowrap;
 
     &::before {
         content: '';

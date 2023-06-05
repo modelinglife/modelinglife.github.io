@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Chi siamo | Modeling Life</title>
-    <meta name="description" content="">
+    <meta name="description" content="Modeling Life intende diffondere far conoscere al pubblico e ai decisori l’importanza dei modelli, far conoscere lo studio basato sul modello elaborato e promuovere interventi di didattica diretti a insegnanti e studenti delle scuole superiori.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="assets/favicon.ico" sizes="any"><!-- 32×32 -->
@@ -13,8 +12,32 @@
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><!-- 180×180 -->
     <link rel="manifest" href="assets/manifest.webmanifest">
 
+    <!-- START OG META TAGS -->
+    <!-- [per Cima cambia da qua] -->
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Modeling Life | Chi siamo">
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://www.modelinglife.io/assets/thumbnail-cs.jpg">
+    <meta property="og:url" content="https://www.modelinglife.io/chi-siamo.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="Modeling Life intende diffondere far conoscere al pubblico e ai decisori l’importanza dei modelli, far conoscere lo studio basato sul modello elaborato e promuovere interventi di didattica diretti a insegnanti e studenti delle scuole superiori.">
+    <meta property="og:site_name" content="Modeling Life by ZADIG">
+    <!-- <meta name="twitter:image:alt" content=""> -->
+
+    <!-- [per Cima fino a qua] -->
+
+
+
+
     <link rel="stylesheet" href="css/style.css">
     <style>
+    .h .hsmall {
+        position: fixed;
+        z-index: 2;
+    }
     .m>section p {
         max-width: 80%;
         margin: 3em 0;
@@ -38,7 +61,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./">Home</a></li>
                     <li><a href="https://modelinglife.gitbook.io/" target="_blank" rel="noopener">Doc</a></li>
                     <li><a href="https://github.com/modelinglife/code" target="_blank" rel="noopener">Code</a></li>
                     <li><a href="https://www.youtube.com/@modeling_life" target="_blank" rel="noopener">Academy</a></li>
@@ -60,7 +83,7 @@
     <div class="bg-full ctrl" id="arrow-ctrl"></div>
 
     <main class="m">
-        <section class="sct sct-0">
+        <section class="sct">
             <div>
                 <p>Un modello matematico è una rappresentazione quantitativa di un fenomeno naturale. Questa simulazione consente di
                 studiare gli effetti di una decisione senza doverla necessariamente adottare nella realtà. Un modello matematico
@@ -76,8 +99,7 @@
                 <h3 class="clr">Contatti</h3>
                 <p>Pietro Terna, Università di Torino<br>
                 <a href="mailto:&#112;&#105;&#101;&#116;&#114;&#111;&#046;&#116;&#101;&#114;&#110;&#097;&#064;&#117;&#110;&#105;&#116;&#111;&#046;&#105;&#116;" target="_blank" rel="mailto">&#112;&#105;&#101;&#116;&#114;&#111;&#046;&#116;&#101;&#114;&#110;&#097;&#064;&#117;&#110;&#105;&#116;&#111;&#046;&#105;&#116;</a><br><br>
-                <a href="https://terna.to.it/" target="_blank" rel="noopener">Pagina personale di Pietro Terna</a>
-               </p>
+                <a href="https://terna.to.it/" target="_blank" rel="noopener">Pagina personale di Pietro Terna</a></p>
 
                 <p>Nicola Bellomo, Politecnico di Torino<br>
                 <a href="mailto:&#110;&#105;&#099;&#111;&#108;&#097;&#046;&#098;&#101;&#108;&#108;&#111;&#109;&#111;&#064;&#112;&#111;&#108;&#105;&#116;&#111;&#046;&#105;&#116;" target="_blank" rel="mailto">&#110;&#105;&#099;&#111;&#108;&#097;&#046;&#098;&#101;&#108;&#108;&#111;&#109;&#111;&#064;&#112;&#111;&#108;&#105;&#116;&#111;&#046;&#105;&#116;</a><br><br>
@@ -89,9 +111,8 @@
     </main>
     <footer>
         <p>Questa realizzazione fa parte dell’iniziativa “Modelli di pandemia da virus a supporto dei programmi di
-            sostegno nel territorio” assistita dal finanziamento dalla Fondazione CRT.</p><br/>
-            <p>by</p>
-            <p alig="cenbter"><img src="assets/Logo-Benefit-vettoriale_bianco-small.png" width="20%"></p>
+            sostegno nel territorio” assistita dal finanziamento dalla Fondazione CRT.</p>
+        <p>by<br><br><img src="assets/Logo-Benefit-vettoriale_bianco-small.png" width="20%"></p>
     </footer>
     <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
         <symbol id="logo" viewBox="0 0 236 236">
@@ -468,6 +489,70 @@
         </symbol>
     </svg>
     <!-- <script src="js/scripts.min.js" async defer></script> -->
+    <script>
+        // document.body.classList.add('jsy')
+
+        const platformExpression = /Mac|iPhone|iPod|iPad/i;
+        const rejectedExpression = /Chrome|Android|CriOS|FxiOS|EdgiOS/i;
+        const expectedExpression = /Safari/i;
+
+        const isAppleSafari = () => {
+            const agent = navigator.userAgent;
+            if (rejectedExpression.test(agent)) {
+                return false;
+            }
+            return platformExpression.test(agent) && expectedExpression.test(agent);
+        };
+        // Hack for SAFARI and WebM transparent video not working
+        // fix by using animated PNG
+        if (isAppleSafari()) {
+            var _img = document.getElementById('vid')
+            var newImg = new Image;
+            newImg.onload = function () {
+                var surc = this.src
+                _img.setAttribute('poster', surc)
+                setInterval(function () {
+                    document.getElementById('vid').setAttribute('poster', surc)
+                }, 9000)
+            }
+            newImg.src = './assets/poster.apng';
+        }
+
+        // Duplicate Header
+        let hf = document.querySelector('.h .hfull >figure').cloneNode(true)
+        hf.querySelector('svg use').setAttribute('xlink:href', '#logo-small')
+        let hn = document.querySelector('.h .hfull >nav').cloneNode(true)
+        document.querySelector('.h .hsmall').appendChild(hf)
+        document.querySelector('.h .hsmall').appendChild(hn)
+
+        if ('IntersectionObserver' in window) {
+            // Observe Header
+            const configH = {
+                // rootMargin: '0% 0% 0% 0%',
+                // threshold: 0.0
+            };
+            var h = document.querySelectorAll('.h .hfull');
+            function handleIntersectionH(entries) {
+                entries.map((entry) => {
+                    console.log("entro")
+                    if (entry.isIntersecting) {
+                        document.querySelector('.h').classList.remove('shorty')
+                    } else {
+                        document.querySelector('.h').classList.add('shorty')
+                    }
+                });
+            }
+            var observerH = new IntersectionObserver(handleIntersectionH, configH);
+            h.forEach(target => {
+                observerH.observe(target);
+            });
+
+
+
+        } else {
+            alert('Use a newer browser in order to have a right experience on our website.');
+        }
+    </script>
 </body>
 
 </html>
